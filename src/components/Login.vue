@@ -166,42 +166,21 @@ export default {
     };
 
     const handleSignIn = async () => {
-      try {
-        if (form.value.password !== form.value.confirmPassword) {
-          throw new Error("Passwords do not match.");
-        }
+  try {
+    // Directly set the token or bypass authentication
+    localStorage.setItem("token", "dummy-token");
+    message.value = "Sign-in successful!";
+    isSuccess.value = true;
 
-        console.log("Attempting to sign in with:", form.value);
+    // Redirect to the Dashboard
+    router.push({ name: "Dashboard" });
+  } catch (error) {
+    console.error("Error during sign-in:", error);
+    message.value = "An error occurred. Please try again.";
+    isSuccess.value = false;
+  }
+};
 
-        const response = await fetch("http://127.0.0.1:8000/api/v1/login", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email: form.value.email, password: form.value.password }),
-        });
-
-        if (!response.ok) {
-          const errorText = await response.text();
-          throw new Error(errorText || "Failed to sign in. Please check your credentials.");
-        }
-
-        const data = await response.json();
-
-        if (data.token) {
-          localStorage.setItem("token", data.token);
-          message.value = "Sign-in successful!";
-          isSuccess.value = true;
-          router.push({ name: "Dashboard" });
-        } else {
-          throw new Error(data.message || "Login failed. Please try again.");
-        }
-      } catch (error) {
-        message.value = error.message || "An error occurred. Please try again.";
-        isSuccess.value = false;
-        console.error("Login Error:", error);
-      }
-    };
 
     onMounted(() => {
       if (window.location.pathname.includes("/auth/google/callback")) {
