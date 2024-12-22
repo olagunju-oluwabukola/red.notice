@@ -5,6 +5,7 @@
       <WhyChooseUs />
      <ApicardsMobile />
       <TestimonialsCard />
+      <pricing-cards/>
       <ArticleComp />
     </div>
   </template>
@@ -16,6 +17,7 @@
   import ApicardsMobile from '../components/ApicardsMobile.vue';
   import TestimonialsCard from '../components/TestimonialsCard.vue';
   import ArticleComp from '../components/ArticleComp.vue';
+  import PricingCards from '../components/PricingCards.vue';
   </script>
   
   
