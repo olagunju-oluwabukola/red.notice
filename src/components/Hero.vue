@@ -1,10 +1,10 @@
 <template>
   <section
     class="relative bg-gradient-to-r from-[#160101] to-[#151212] text-white py-16 px-6 md:px-12 text-left bg-cover bg-center"
-    style="background-image: url('/img/7637c246392da89e106d50b274bc3ef4 1.png');"
+    style="background-image: url('/img/ftbg2.png');"
   >
    
-    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 bg-black opacity-75"></div>
 
     <div class="relative grid md:grid-cols-2 items-center gap-8">
       <div class="space-y-6 md:pl-10">
