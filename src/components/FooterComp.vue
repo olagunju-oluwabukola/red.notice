@@ -4,9 +4,9 @@
         <!-- Top Section -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <img
-          src="/img/R N 1.svg"
+          src="/img/R_N_1-removebg-preview.png"
           alt="Cyber Defense Icon"
-          class="h-6 md:h-14 w-1/2 "
+          class="h-6 md:h-10 w-1/2 "
         />
           <!-- Left Section: Links -->
           <div>
@@ -23,7 +23,7 @@
             <ul class="space-y-3 md:space-y-6 text-sm">
               <li><a href="#" class="hover:text-red">About us</a></li>
               <li><a href="#" class="hover:text-red">Blog</a></li>
-              <li><a href="#" class="hover:text-red">Careers</a></li>
+              <li><a href="#" class="hover:text-red">Careers <button  class="px-2 py-2 bg-gradient-to-r from-red to-black rounded-2xl shadow-md hover:opacity-90 text-white">We're hiring</button></a></li>
               <li><a href="#" class="hover:text-red">Contact us</a></li>
             </ul>
           </div>
@@ -45,11 +45,17 @@
   </button>
 </div>
 
-            <img src="/img/76744487f26d0848b00b56856a1539ba 1.svg"
-            class="hidden md:flex"
-            alt="">
-            <!-- Social Media Icons -->
-            <div class="flex justify-center space-x-6 mt-4" >
+            
+        
+            
+          </div>
+        </div>
+  <div class="flex justify-between">
+    <div class="mt-8 border-t border-gray-700 pt-4  text-[14px]">
+          <p>&copy; 2024 RedNotice. All rights reserved.</p>
+        </div>
+    <div>
+<div class="flex justify-center space-x-6 mt-4" >
               
               <a href="#" class="hover:text-red">
                 <svg 
@@ -90,12 +96,8 @@
               </a>
             </div>
           </div>
-        </div>
-  
-        <!-- Bottom Section -->
-        <div class="mt-8 border-t border-gray-700 pt-4  text-[14px]">
-          <p>&copy; 2024 RedNotice. All rights reserved.</p>
-        </div>
+  </div>
+        
       </div>
     </footer>
   </template>
